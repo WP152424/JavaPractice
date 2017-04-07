@@ -10,12 +10,15 @@ public class Question {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("1."+question[0]);
 		String answer1 = scanner.nextLine();
+		
+		
 		if(answers[0].equals(answer1)) {
 			System.out.println("정답입니다!");
 		}
 		else {
 			System.out.println("틀렸습니다!");
 		}
+		
 		
 		System.out.println("2."+question[1]);
 		String answer2 = scanner.nextLine();
@@ -26,6 +29,7 @@ public class Question {
 			System.out.println("틀렸습니다!");
 		}
 		
+		
 		System.out.println("3."+question[2]);
 		String answer3 = scanner.nextLine();
 		if(answers[2].equals(answer3)) {
@@ -34,6 +38,7 @@ public class Question {
 		else {
 			System.out.println("틀렸습니다!");
 		}
+		
 		
 		System.out.println("<<결과 출력>>");
 		System.out.println(question[0]+" "+answers[0]+"입니다.");
